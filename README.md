@@ -1,16 +1,22 @@
-## Hi there 👋
+# BotBoxIL - בוטים חכמים לעסקים קטנים 🤖
 
-<!--
-**BotboxIL/BotBoxIL** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+דף נחיתה המציג את BotBoxIL – שירות לבניית בוטים חכמים לוואטסאפ, טלגרם ואתרי אינטרנט.  
+הבוטים נותנים מענה ללקוחות, אוספים לידים, משיבים על שאלות, ומפנים לרכישה – 24/7.
 
-Here are some ideas to get you started:
+## 💼 למי זה מתאים?
+- עסקים קטנים
+- יועצים, מטפלים וקואוצ'רים
+- חנויות אינטרנטיות
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📦 קבצים בפרויקט
+- `index.html` – קובץ האתר הראשי
+- `logo.png` – לוגו העסק
+
+## 🌍 הדגמה
+(אם העלית את האתר ל-GitHub Pages, תוכל להוסיף קישור כאן)
+
+---
+
+למידע נוסף או ליצירת קשר:  
+📧 info@botboxil.co.il  
+🌐 www.botboxil.co.il
