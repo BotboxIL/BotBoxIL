@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BotBoxIL - בוטים חכמים לעסקים קטנים</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #222;
+      overflow-x: hidden;
+      position: relative;
+    }
+    .wave-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      z-index: -1;
+    }
+    .falling-bots {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .bot {
+      position: absolute;
+      width: 40px;
+      animation: fall 8s linear infinite;
+      opacity: 0.3;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0deg); }
+      100% { transform: translateY(120vh) rotate(360deg); }
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      background: #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 16px;
+    }
+    h1 {
+      color: #f2b705;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 1px 1px #fff;
+      margin-top: 2rem;
+    }
+    h2 {
+      color: #333;
+      margin-top: 2rem;
+      border-bottom: 2px solid #f2b705;
+      padding-bottom: 0.5rem;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(to right, #ffe259, #ffa751);
+      border-bottom: 4px solid #f2b705;
+      position: relative;
+      border-radius: 0 0 24px 24px;
+    }
+    .cta-button {
+      background: #f2b705;
+      color: black;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #e6a800;
+    }
+    .logo {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="falling-bots">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" class="bot" style="left: 5%; animation-delay: 0s;">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" class="bot" style="left: 25%; animation-delay: 2s;">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" class="bot" style="left: 50%; animation-delay: 4s;">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" class="bot" style="left: 75%; animation-delay: 1s;">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" class="bot" style="left: 90%; animation-delay: 3s;">
+  </div>
+
+  <div class="hero">
+    <img src="logo.png" alt="BotBoxIL Logo" class="logo">
+    <div class="container">
+      <h1>תן לבוטים לעבוד בשבילך – גם כשאתה נח</h1>
+      <a href="#contact" class="cta-button">בוא נמצא את הבוט המתאים לך</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>מה זה BotBoxIL?</h2>
+    <p>BotBoxIL בונה עבורך בוטים חכמים לווטסאפ, טלגרם או האתר שלך – שישיבו ללקוחות, יאספו לידים, ויחסכו לך זמן יקר.</p>
+
+    <h2>אנחנו BotBoxIL מציעים את שירותינו לעסקים הבאים:</h2>
+    <div style="display: flex; justify-content: space-between; gap: 1rem; margin-top: 2rem;">
+      <div style="background: #f2f2f2; border: 1px solid #f2b705; padding: 1rem; font-weight: bold; border-radius: 8px; width: 30%; text-align: center;">
+        עסקים קטנים שמעוניינים לחסוך זמן יקר
+      </div>
+      <div style="background: #f2f2f2; border: 1px solid #f2b705; padding: 1rem; font-weight: bold; border-radius: 8px; width: 30%; text-align: center;">
+        יועצים, מטפלים, קואוצ’רים
+      </div>
+      <div style="background: #f2f2f2; border: 1px solid #f2b705; padding: 1rem; font-weight: bold; border-radius: 8px; width: 30%; text-align: center;">
+        חנויות אונליין שצריכות ליווי אוטומטי
+      </div>
+    </div>
+
+    <h2>אנחנו מציעים מגוון רחב של אופציות להלן:</h2>
+    <table>
+      <tr><th>סוג הבוט</th><th>מה הוא עושה</th></tr>
+      <tr><td>בוט שאלות נפוצות</td><td>עונה על שירותים, מחירים, מיקום ועוד</td></tr>
+      <tr><td>בוט איסוף לידים</td><td>שואל, שומר ומעביר אליך</td></tr>
+      <tr><td>בוט לוובינר / הרשמה</td><td>רושם משתתפים ושולח תזכורות</td></tr>
+      <tr><td>בוט המלצות</td><td>ממליץ על מוצרים לפי שאלות</td></tr>
+      <tr><td>בוט GPT</td><td>משוחח עם הלקוח ומבין כוונה</td></tr>
+    </table>
+
+    <h2>צור קשר</h2>
+    <form action="https://formspree.io/f/xblgevzd" method="POST">
+      <input type="hidden" name="_subject" value="פנייה חדשה מאתר BotBoxIL">
+      <input type="hidden" name="_replyto" value="danieltsilker@gmail.com">
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="text" name="name" placeholder="שם מלא" required>
+      <input type="tel" name="phone" placeholder="טלפון" required>
+      <input type="text" name="business" placeholder="תחום העסק">
+      <textarea name="message" rows="4" placeholder="מה אתה מחפש מהבוט?"></textarea>
+      <button class="cta-button" type="submit">שלח פנייה</button>
+    </form>
+
+    <div style="text-align: center; margin-top: 3rem; font-size: 1.1rem; color: #444; background: #f0f0f0; padding: 2rem; border-radius: 12px;">
+      תודה שפנית ל־BotBoxIL!<br>
+      נחזור אליך בהקדם האפשרי בדרך שנוחה לך.
+    </div>
+  </div>
+
+  <footer>
+    <p style="text-align: center; margin-top: 2rem; color: #999;">BotBoxIL &copy; כל הזכויות שמורות</p>
+  </footer>
+</body>
+</html>
